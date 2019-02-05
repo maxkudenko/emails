@@ -1,80 +1,104 @@
----
-subject: My Sidebar Hero Email Template Subject
----
-
-<wrapper class="header">
-  <container>
-    <row class="collapse">
-      <columns small="6">
-        <img src="http://placehold.it/200x50/663399">
-      </columns>
-      <columns small="6">
-        <p class="text-right">SIDEBAR HERO</p>
-      </columns>
-    </row>
-  </container>
-</wrapper>
-
+<spacer size="10"></spacer>
 <container>
-
-  <spacer size="16"></spacer>
+  <row>
+    <columns>
+      <spacer size="50"></spacer>
+      <center>
+        <img class="logo" src="https://s3.amazonaws.com/ra-static-email/logo.png" alt="logo">
+      </center>
+      <spacer size="20"></spacer>
+    </columns>
+  </row>
 
   <row>
     <columns>
-      <h1>Hi, Elijah Baily</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi impedit sapiente delectus molestias quia.</p>
-      <center>
-        <img src="http://placehold.it/570x300" alt="">
-      </center>
-      <callout class="primary">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda, praesentium qui vitae voluptate dolores. <a href="#">Click it!</a></p>
-      </callout>
+      <spacer size="15"></spacer>
+      <h1 class="text-center">👋  &nbsp;&nbsp; Hello John!</h1>
+      <spacer size="10"></spacer>
+      <h2 class="text-center">You have some updates in your collection</h2>
+      <spacer size="10"></spacer>
+      <h1 class="text-center search-header">Downtown Austin 👇</h1>
+      <spacer size="30"></spacer>
     </columns>
   </row>
-  <row>
-    <columns large="7">
-      <h3>Hello, Han Fastolfe</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nobis velit, aliquid pariatur at fugit. Omnis at quae, libero iusto quisquam animi blanditiis neque, alias minima corporis, ab in explicabo?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos voluptas minus, cupiditate voluptatem, voluptatum iste molestiae consectetur temporibus quae dolore nam possimus reprehenderit blanditiis laborum iusto sit. Perspiciatis, dolor.</p>
-      <callout class="secondary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas optio totam quidem, placeat sunt, sit iusto fugit. Harum omnis deleniti enim nihil iure, quis laudantium veniam velit animi debitis. <a href="#">Click It!</a>
-      </callout>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores minus eius amet alias odit accusantium, fugit perspiciatis nulla suscipit nisi. Laborum aliquid, voluptatum consectetur fugiat maxime architecto enim molestias aperiam!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eveniet veritatis, magnam ipsam et vero necessitatibus. Deserunt facilis impedit, adipisci illo laboriosam assumenda fugiat dolorum nam odio aliquid, sit est.</p>
-      <button class="expand" href="#">Click Me!</button>
-    </columns>
-    <columns large="5" class="sidebar">
-      <callout class="secondary">
-        <h5>Header</h5>
-        <p class="lead">Sub-header</p>
-        <menu class="vertical">
-          <item href="#">Just a Plain Link &raquo;</item>
-          <item href="#">Just a Plain Link &raquo;</item>
-          <item href="#">Just a Plain Link &raquo;</item>
-          <item href="#">Just a Plain Link &raquo;</item>
-          <item href="#">Just a Plain Link &raquo;</item>
-          <item href="#">Just a Plain Link &raquo;</item>
-          <item href="#">Just a Plain Link &raquo;</item>
-        </menu>
-      </callout>
-      <callout class="secondary">
-        <h6>CONNECT WITH US:</h6>
-        <button class="facebook expand" href="#">Facebook</button>
-        <button class="twitter expand" href="#">Twitter</button>
-        <button class="google expand" href="#">Google+</button>
-        <p>CONTACT INFO:</p>
-        <p>Phone: 408-341-0600</p>
-        <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p>
-      </callout>
-    </columns>
-  </row>
-  
-  <center>
-    <menu>
-      <item href="#">Terms</item>
-      <item href="#">Privacy</item>
-      <item href="#">Unsubscribe</item>
-    </menu>
-  </center>
 
+  <row>
+    <columns small="1" large="3"></columns>
+    <columns small="5" large="3">
+      <center>
+        <img src="https://s3.amazonaws.com/ra-static-email/house.png" style="width: 32px; height: 32px;">
+      </center>
+      <span class="text-center updated-number">35</span>
+      <span class="text-center updated">New Listing(s)</span>
+    </columns>
+    <columns small="5" large="3">
+      <center>
+          <img src="https://s3.amazonaws.com/ra-static-email/price.png" style="width: 32px; height: 32px;">
+      </center>
+      <span class="text-center updated-number">3</span>
+      <span class="text-center updated">Updated price</span>
+    </columns>
+    <columns small="1" large="3"></columns>
+  </row>
+
+  <spacer size="40"></spacer>
+
+  <row>
+    <columns small="1" large="3"></columns>
+    <columns small="5" large="3">
+      <center>
+        <img src="https://s3.amazonaws.com/ra-static-email/photo.png" style="width: 32px; height: 32px;">
+      </center>
+      <span class="text-center updated-number">1</span>
+      <span class="text-center updated">Updated photo</span>
+    </columns>
+    <columns small="5" large="3">
+      <center>
+        <img src="https://s3.amazonaws.com/ra-static-email/clock.png" style="width: 32px; height: 32px;">
+      </center>
+      <span class="text-center updated-number">17</span>
+      <span class="text-center updated">Updated Status</span>
+    </columns>
+    <columns small="1" large="3"></columns>
+  </row>
+
+  <row>
+    <columns small="1"></columns>
+    <columns small="10">
+      <spacer size="50"></spacer>
+      <center>
+        <button class="large expanded" href="#">Browse All Updates (56)</button>
+      </center>
+      <spacer size="30"></spacer>
+    </columns>
+    <columns small="1"></columns>
+  </row>
+
+  <row class="grey-background">
+    <columns>
+      <spacer size="16"></spacer>
+      <center>
+        <menu>
+          <menu>
+            <item href="https://www.austinlocal.com/"><img src="https://s3.amazonaws.com/ra-static-email/rss.png" alt="austinlocal" width="17px" height="17px"></item>
+            <item href="https://www.facebook.com/realtyaustin"><img src="https://s3.amazonaws.com/ra-static-email/facebook.png" alt="facebook" width="17px" height="17px"></item>
+            <item href="https://twitter.com/realtyaustin"><img src="https://s3.amazonaws.com/ra-static-email/twitter.png" alt="twitter" width="17px" height="17px"></item>
+            <item href="https://www.linkedin.com/company/realty-austin"><img src="https://s3.amazonaws.com/ra-static-email/linkedin.png" alt="linkedin" width="17px" height="17px"></item>
+            <item href="https://www.youtube.com/user/realtyaustin"><img src="https://s3.amazonaws.com/ra-static-email/youtube.png" alt="youtube" width="17px" height="17px"></item>
+            <item href="http://instagram.com/realtyaustin"><img src="https://s3.amazonaws.com/ra-static-email/instagram.png" alt="instagram" width="17px" height="17px"></item>
+          </menu>
+        </menu>
+      </center>
+      <spacer size="15"></spacer>
+      <p class="text-center">Copyright 2018 Realty Austin, LLC. All Rights Reserved.</p>
+      <p class="text-center">Realty Austin is an Equal Opportunity Employer and supports the Fair Housing Act.</p>
+      <center>
+        <a href="https://www.realtyaustin.com/privacy-policy.php">Privacy Policy</a>
+        <span class="line">|</span>
+        <a href="https://www.realtyaustin.com/terms-of-use.php">Terms of Use</a>
+      </center>
+      <spacer size="50"></spacer>
+    </columns>
+  </row>
 </container>
+<spacer size="10"></spacer>

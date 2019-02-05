@@ -1,44 +1,98 @@
----
-subject: My Newsletter Email Template Subject
----
+<spacer size="10"></spacer>
 
-<container>
+<wrapper class="header-wrapper">
 
-  <spacer size="16"></spacer>
+  <container>
+    <spacer size="50"></spacer>
 
-  <row>
-    <columns>
-      <h1 class="text-center">The Insider</h1>
-      <center>
-        <img src="http://placehold.it/500x200">
-      </center>
+    <center>
+      <img class="logo" src="https://s3.amazonaws.com/ra-static-email/logo.png" alt="logo">
+    </center>
 
-      <spacer size="16"></spacer>
-      
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa itaque illo doloribus soluta expedita dolores commodi fuga odit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto reiciendis eos magni deleniti accusamus tempore, consectetur! Maxime amet, exercitationem nihil fugit eius esse voluptatum ab incidunt minima, saepe reiciendis ipsum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto reiciendis eos magni deleniti accusamus tempore, consectetur! Maxime amet, exercitationem nihil fugit eius esse voluptatum ab incidunt minima, saepe reiciendis ipsum.</p>
+    <spacer size="30"></spacer>
 
-      <row>
-        <columns large="6">
-          <h4>More Reading:</h4>
-          <ul>
-            <li><a href="#">Lorem Ipsum Dolor Sit Amet</a></li>
-            <li><a href="#">Lorem Ipsum Dolor Sit Amet</a></li>
-            <li><a href="#">Lorem Ipsum Dolor Sit Amet</a></li>
-          </ul>
-        </columns>
-        <columns>
-          <h4>Get Involved:</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
+    <row>
+      <columns>
+        <h1 class="text-center">👋  &nbsp;&nbsp; Hello Mary!</h1>
+        <spacer size="10"></spacer>
+        <h2 class="text-center">You have some updates in your collection</h2>
+        <spacer size="10"></spacer>
+        <h1 class="text-center search-header">Downtown Austin 👇</h1>
+          <spacer size="40"></spacer>
         </columns>
       </row>
 
-      <p><small>You received this email because you're signed up to get updates from us. <a href="#">Click here to unsubscribe.</a></small></p>
-    </columns>
-  </row>
-</container>
+      <row>
+        <columns small="6">
+          <center>
+            <img src="../assets/img/house.png" height="27px" width="27px">
+          </center>
+          <span class="text-center updated-number">35</span>
+          <span class="text-center updated">New Listing(s)</span>
+        </columns>
+        <columns small="6">
+          <center>
+              <img src="../assets/img/price.png" height="27px" width="27px">
+          </center>
+          <span class="text-center updated-number">3</span>
+          <span class="text-center updated">Updated price</span>
+        </columns>
+      </row>
+
+      <spacer size="40"></spacer>
+
+      <row>
+        <columns small="6">
+          <center>
+            <img src="../assets/img/photo.png" height="27px" width="27px">
+          </center>
+          <span class="text-center updated-number">1</span>
+          <span class="text-center updated">Updated photo</span>
+        </columns>
+        <columns small="6">
+          <center>
+            <img src="../assets/img/clock.png" height="27px" width="27px">
+          </center>
+          <span class="text-center updated-number">17</span>
+          <span class="text-center updated">Updated Status</span>
+        </columns>
+      </row>
+
+      <spacer size="30"></spacer>
+      <button class="large expanded" href="#">Browse All Updates (56)</button>
+      <spacer size="30"></spacer>
+
+    </container>
+
+</wrapper>
+
+<wrapper class="footer-wrapper">
+
+  <container>
+
+    <row class="grey-background">
+      <columns>
+      <spacer size="20"></spacer>
+      <center>
+        <menu>
+          <item href="https://www.austinlocal.com/"><img src="https://s3.amazonaws.com/ra-static-email/rss.png" alt="austinlocal" width="17px" height="17px"></item>
+          <item href="https://www.facebook.com/realtyaustin"><img src="https://s3.amazonaws.com/ra-static-email/facebook.png" alt="facebook" width="17px" height="17px"></item>
+          <item href="https://twitter.com/realtyaustin"><img src="https://s3.amazonaws.com/ra-static-email/twitter.png" alt="twitter" width="17px" height="17px"></item>
+          <item href="https://www.linkedin.com/company/realty-austin"><img src="https://s3.amazonaws.com/ra-static-email/linkedin.png" alt="linkedin" width="17px" height="17px"></item>
+          <item href="https://www.youtube.com/user/realtyaustin"><img src="https://s3.amazonaws.com/ra-static-email/youtube.png" alt="youtube" width="17px" height="17px"></item>
+          <item href="http://instagram.com/realtyaustin"><img src="https://s3.amazonaws.com/ra-static-email/instagram.png" alt="instagram" width="17px" height="17px"></item>
+        </menu>
+      </center>
+      <spacer size="10"></spacer>
+      <p class="text-center">Copyright 2018 Realty Austin, LLC. All Rights Reserved.<br/>
+        Realty Austin is an Equal Opportunity Employer and supports the Fair Housing Act.<br/>
+        <a href="https://www.realtyaustin.com/privacy-policy.php">Privacy Policy</a> | <a href="https://www.realtyaustin.com/terms-of-use.php">Terms of Use</a></p>
+        <spacer size="20"></spacer>
+      </columns>
+    </row>
+
+  </container>
+
+</wrapper>
+
+<spacer size="10"></spacer>

@@ -8,8 +8,30 @@
   background-color: #f6f6f6 !important;
 }
 
-.body {
-  margin: 0 85px;
+.header-wrapper {
+  background-color: #ffffff;
+  width: 620px;
+}
+
+.footer-wrapper {
+  background-color: #f6f6f6;
+  width: 620px;
+}
+
+.search-header {
+  color: #0085ad;
+}
+
+.updated {
+  font-size: 16px;
+  color: #7f8e9b;
+}
+
+.updated-number {
+  line-height: 1;
+  font-size: 36px;
+  font-weight: bold;
+  color: #566069;
 }
 
 h1, h2 {
