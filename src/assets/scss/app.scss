@@ -160,7 +160,12 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 16px
+  }
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    font-size: 20px
+  }
 }
 
 p {
@@ -201,7 +206,7 @@ a {
 
 hr {
   display: inline-block;
-  width: 40%;
+  width: 42%;
   height: 1px;
   color: #e0e9f0;
   background-color: #e0e9f0;
@@ -220,11 +225,21 @@ span {
 }
 
 .link {
-  font-size: 16px;
   font-weight: normal;
   color: #0085ad;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 14px
+  }
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    font-size: 16px
+  }
 }
 
 .line {
   color: #7f8e9b;
+  margin: 0 3px;
+}
+
+.or {
+  margin: 0 10px;
 }
