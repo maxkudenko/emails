@@ -37,11 +37,11 @@
 
 .updated-number {
   display: inline-block;
-  width: 44px;
   line-height: 1;
   font-size: 36px;
   font-weight: bold;
   color: #566069;
+  padding-left: 8px;
 }
 
 .date {
@@ -50,13 +50,18 @@
   font-weight: bold;
   line-height: 1.1;
   color: #566069;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
 }
 
 .contacts-header {
   font-family: Lato, sans-serif;
   font-size: 16px;
-  font-weight: normal;
-  color: #7f8e9b;
+  font-weight: bold;
+  color: #566069;
 }
 
 .contacts {
@@ -80,16 +85,15 @@
   line-height: 1;
   letter-spacing: 0.5px;
   color: #59636b;
-  padding-left: 130px;
+  // padding-left: 130px;
 }
 
 .adress {
   font-family: Lato, sans-serif;
   font-size: 16px;
-  line-height: 1.7;
+  margin: 2px 0;
   letter-spacing: -0.4px;
   color: #7f8e9b;
-  padding-left: 130px;
 }
 
 .district {
@@ -98,18 +102,25 @@
   line-height: 1.3;
   letter-spacing: normal;
   color: #bcc8d2;
-  padding-left: 130px;
+  // padding-left: 130px;
 }
 
 .question {
+  padding: 10px 0 10px 15px;
   border-left: 3px solid #db4336;
-  padding-left: 15px;
   font-family: Lato, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.6;
   color: #566069;
   max-width: 360px;
+}
+
+.vertical-line {
+  display: inline-block;
+  width: 3px;
+  height: 15px;
+  background-color: #db4336;
 }
 
 .question-header {
@@ -126,6 +137,7 @@
   font-weight: normal;
   letter-spacing: normal;
   color: #7f8e9b;
+  line-height: 24px;
 }
 
 .circle {
@@ -143,6 +155,16 @@
     color: #ffffff;
     line-height: 38px;
   }
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    width: 32px;
+    height: 32px;
+
+    p {
+      font-size: 14px;
+      line-height: 32px;
+    }
+  }
 }
 
 .contact-header {
@@ -156,27 +178,24 @@
 h1,
 h2 {
   font-family: 'Lato', sans-serif;
+  font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: normal;
   color: #566069;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    &.sub-header {
+      font-size: 16px !important;
+    }
+  }
 }
 
 h1 {
   font-size: 24px;
   font-weight: bold;
-}
-
-h2 {
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    font-size: 16px
-  }
-
-  @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: 20px
-  }
 }
 
 p {
@@ -267,6 +286,8 @@ span {
   line-height: 1.5;
   letter-spacing: normal;
   color: #566069;
+  position: relative;
+  bottom: 4px;
 }
 
 .open-house {
@@ -283,9 +304,6 @@ span {
 
 .status {
   padding: 1px 10px;
-  position: absolute;
-  top: 6px;
-  left: 20px;
   font-family: Lato, sans-serif;
   font-size: 10px;
   font-style: normal;
@@ -372,6 +390,8 @@ span {
 }
 
 .main-button {
+  width: 337px;
+  height: 45px;
   color: #ffffff;
   background-color: #e1523d;
   transition: all 0.5s ease-out;
@@ -405,4 +425,152 @@ span {
 .open-house-header {
   font-size: 18px;
   font-weight: normal;
+}
+
+.open-hause-with-backgrounde {
+  padding: 10px 0 0 10px;
+  display: inline-block;
+  height: 174px;
+  width: 327px;
+  background-image: url(https://s3.amazonaws.com/ra-static-email/house-img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.signature-container {
+  border-radius: 1px;
+  background-color: #f4f5f6 !important;
+
+  h1 {
+    line-height: 1;
+    color: #1c262e;
+  }
+
+  span {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #515e68;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 16px !important;
+    }
+  }
+
+  .logo {
+    height: 30px !important;
+    width: 90px !important;
+  }
+
+  .photo-container {
+    height: 88px;
+    width: 88px;
+    border-radius: 50%;
+    border: 2px solid #e1523d;
+    background-image: url(https://public.realtyaustin.com/agents/jonathan@realtyaustin.com/jonathan@realtyaustin.com-headshot-transparent.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      height: 56px !important;
+      width: 56px !important;
+    }
+  }
+
+  .phone, .email {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #7f8e9b;
+    margin-right: 10px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 16px !important;
+    }
+  }
+
+  .contacts {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      display: none;
+    }
+  }
+
+  .contacts-2 {
+    @media only screen and (min-width: #{$global-breakpoint}) {
+      display: none;
+    }
+  }
+
+  .email-text {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #515e68;
+    text-decoration: none;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 16px !important;
+    }
+  }
+
+  .trademark {
+    color: #7f8e9b;
+    font-size: 14px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 12px !important;
+    }
+  }
+
+  .menu {
+    max-width: 250px !important;
+  }
+
+  table.menu th.menu-item {
+    padding: 0;
+    padding-right: 10px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-right: 20px !important;
+    }
+  }
+
+  .horizontal-line {
+    height: 112px;
+    width: 1px;
+    background-color: #bcc8d2;
+    margin-left: 30px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      display: none !important;
+    }
+  }
+
+  .vertical-line {
+    height: 1px;
+    width: 100%;
+    background-color: #bcc8d2;
+    margin: 15px 0;
+
+    @media only screen and (min-width: #{$global-breakpoint}) {
+      display: none !important;
+    }
+  }
 }
