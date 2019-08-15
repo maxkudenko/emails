@@ -105,8 +105,8 @@ $button-color: $white;
 $button-font-weight: normal;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $primary-color;
-$button-border: none;
-$button-radius: $global-radius;
+$button-border: 1px solid #e1523d;
+$button-radius: 1px;
 $button-rounded: $global-rounded;
 
 // 7. Menu
