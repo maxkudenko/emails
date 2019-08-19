@@ -319,6 +319,8 @@ span {
   text-transform: uppercase;
   border-radius: 1px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 20px;
 }
 
 .status-red {
@@ -612,4 +614,8 @@ span {
   font-stretch: normal;
   letter-spacing: normal;
   color: #0085ad;
+}
+
+.home-photo {
+  width: 100% !important;
 }
