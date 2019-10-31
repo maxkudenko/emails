@@ -1,59 +1,67 @@
-<spacer size="10"></spacer>
+<spacer size="20"></spacer>
 
-<container>
-  <row class="logo-container">
-    <columns>
-      <spacer size="50"></spacer>
-      <center>
-        <img class="logo" src="http://test-external-alb-569944404.us-east-1.elb.amazonaws.com:8080/emails/shared/logo.png" alt="logo">
-      </center>
-      <spacer size="20"></spacer>
-    </columns>
-  </row>
+<container class="welcome">
+
+  {{> header name="Mary"}}
+
+  <spacer size="20"></spacer>
 
   <row>
-    <columns>
-      <spacer size="15"></spacer>
-      <h1 class="text-center">👋  &nbsp;Hello Mary!</h1>
-      <spacer size="30"></spacer>
-    </columns>
-  </row>
-
-  <row>
-    <columns>
+    <columns large="2" class="hide-on-mobile"></columns>
+    <columns large="8">
       <h2 class="text-center">You can now access Realty Austin 👇</h2>
     </columns>
+    <columns large="2" class="hide-on-mobile"></columns>
   </row>
 
+  <spacer size="30"></spacer>
+
   <row>
-    <columns large="1"></columns>
-    <columns small="12" large="10">
-      <spacer size="40"></spacer>
-      <center>
-        <button class="large expanded" href="#">Create Password</button>
-      </center>
-      <spacer size="30"></spacer>
-      <center>
-        <hr><span class="or">Or</span><hr>
-        <spacer size="20"></spacer>
-        <span class="text-center">copy the following link into your browser:</span>
-        <spacer size="10"></spacer>
-      </center>
+    <columns>
+      <h3 class="text-center">Please, take a moment to review our <a href="https://www.realtyaustin.com/terms-of-use.php" target="_blank">Terms of Use</a></h3>
     </columns>
-    <columns large="1"></columns>
   </row>
 
+  <spacer size="25"></spacer>
+
   <row>
-    <columns large="1"></columns>
+    <columns large="1" class="hide-on-mobile"></columns>
     <columns large="10">
-      <p class="text-center"><a class="link" href="#">http://test-external-alb-569944404.us-east-1.elb.amazonaws.com:8080/</a></p>
-      <spacer size="30"></spacer>
+      <button class="large expanded" href="#" target="_blank">Accept Terms and Create Password</button>
     </columns>
-    <columns large="1"></columns>
+    <columns large="1" class="hide-on-mobile"></columns>
   </row>
+
+  <spacer size="20"></spacer>
+
+  <row>
+    <columns small="12" large="1" class="hide-on-mobile"></columns>
+    <columns small="4" large="4"><hr class="horizont-line"></columns>
+    <columns small="4" large="2">
+      <center>
+        <span class="or">Or</span>
+      </center>
+    </columns>
+    <columns small="4" large="4"><hr class="horizont-line"></columns>
+    <columns small="12" large="1" class="hide-on-mobile"></columns>
+  </row>
+
+  <spacer size="20"></spacer>
+
+  <row>
+    <columns small="12" large="2" class="hide-on-mobile"></columns>
+    <columns small="12" large="8">
+      <span class="text-center">copy the following link into your browser:</span>
+      <spacer size="10"></spacer>
+      <p class="text-center"><a class="link-to-collection-or-ss" href="#" target="_blank">http://test-external-alb-569944404.us-east-1.elb.amazonaws.com:8080/</a></p>
+    </columns>
+    <columns small="12" large="2" class="hide-on-mobile"></columns>
+  </row>
+
+  <spacer size="40"></spacer>
 
   {{> footer}}
 
 </container>
 
-<spacer size="10"></spacer>
+<spacer size="20"></spacer>

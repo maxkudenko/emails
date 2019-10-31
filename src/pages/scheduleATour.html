@@ -2,29 +2,24 @@
 
 <container>
 
-  <row>
-    <columns>
-      <spacer size="50"></spacer>
-      <center>
-        <img class="logo" src="https://s3.amazonaws.com/ra-static-email/logo.png" alt="logo" height="44" width="136"/>
-      </center>
-      <spacer size="20"></spacer>
-    </columns>
-  </row>
+  {{> header name="John"}}
+
+  <spacer size="20"></spacer>
 
   <row>
     <columns>
-      <spacer size="15"></spacer>
-      <h1 class="text-center">👋  &nbsp; Hello John!</h1>
-      <spacer size="15"></spacer>
-      <h2 class="text-center sub-header"><strong>Mary Goverl scheduled a tour about</strong></h2>
+      <h2 class="text-center"><strong>Mary Goverl</strong> scheduled a tour about</h2>
       <spacer size="30"></spacer>
     </columns>
   </row>
 
   <row>
     <columns small="2">
-      <img class="float-right icon" src="https://s3.amazonaws.com/ra-static-email/location.png" style="width: 22px; height: 22px;" />
+      <p class="text-right">
+        <span style="display: inline-block; width: 22px;">
+          <img class="icon" src="https://s3.amazonaws.com/ra-static-email/location.png" style="width: 22px; height: 22px;" width="22" height="22"/>
+        </span>
+      </p>
     </columns>
     <columns small="9">
       <p class="text-left location">2710 Benevento Way, Cedar Park 2710 Benevento Way, Cedar Park</p>
@@ -38,12 +33,12 @@
   <row>
     <columns small="2"></columns>
     <columns small="5" large="3">
-      <img src="https://s3.amazonaws.com/ra-static-email/home.jpeg" style="width: 123px; height: 67px;" />
+      <img src="https://s3.amazonaws.com/ra-static-email/home.jpeg" style="width: 123px; height: 67px;" width="123" height="67"/>
     </columns>
     <columns small="5" large="6">
       <p class="price">$780,860</p>
       <spacer size="4"></spacer>
-      <p class="adress">2710 Benevento Way, Cedar Park ...</p>
+      <p class="adress">2710 Benevento Way, Ced...</p>
       <spacer size="4"></spacer>
       <p class="district">McKinley Heights</p>
     </columns>
@@ -54,7 +49,11 @@
 
   <row>
     <columns small="2">
-      <img class="float-right icon" src="https://s3.amazonaws.com/ra-static-email/calendar.png" style="width: 22px; height: 22px;" />
+      <p class="text-right">
+        <span style="display: inline-block; width: 22px;">
+          <img class="icon" src="https://s3.amazonaws.com/ra-static-email/calendar.png" style="width: 22px; height: 22px;" width="22" height="22"/>
+        </span>
+      </p>
     </columns>
     <columns small="10">
       <p class="text-left date">8 January 2019 at 9:00 am</p>
@@ -63,37 +62,54 @@
 
   <spacer size="30"></spacer>
 
+  <row class="message">
+    <columns small="2">
+      <p class="text-right">
+        <span class="user-initials">MG</p>
+      </p>
+    </columns>
+    <columns small="9">
+      <p class="text-left name">Mary Goverl</p>
+      <p class="text-left date">01/21/2019</p>
+      <spacer size="15"></spacer>
+      <p class="text-left question">I would like to take a look at this house</p>
+    </columns>
+    <columns small="12" large="1"></columns>
+  </row>
+
+  <spacer size="35"></spacer>
+
   <row>
     <columns small="2">
-      <img class="float-right icon" src="https://s3.amazonaws.com/ra-static-email/contact.png" style="width: 22px; height: 22px;" />
+      <p class="text-right">
+        <span style="display: inline-block; width: 22px;">
+          <img class="icon" src="https://s3.amazonaws.com/ra-static-email/user.png" style="width: 22px; height: 22px;" width="22" height="22"/>
+        </span>
+      </p>
     </columns>
     <columns small="10">
-      <p class="text-left contacts-header">Mary Contacts</p>
-      <spacer size="15"></spacer>
+      <p class="text-left contacts-header">Mary Goverl</p>
+    </columns>
+  </row>
+
+  <spacer size="25"></spacer>
+
+  <row>
+    <columns small="2">
+      <p class="text-right">
+        <span style="display: inline-block; width: 22px;">
+          <img class="icon" src="https://s3.amazonaws.com/ra-static-email/contact.png" style="width: 22px; height: 22px;" width="22" height="22"/>
+        </span>
+      </p>
+    </columns>
+    <columns small="10">
       <p class="text-left contacts">+1(512)-564-2322</p>
       <spacer size="10"></spacer>
       <p class="text-left contacts">marygoverl@gmail.com</p>
     </columns>
   </row>
 
-  <spacer size="35"></spacer>
-
-  <row>
-    <columns small="2">
-      <div class="circle icon">
-        <p>MG</p>
-      </div>
-    </columns>
-    <columns small="9">
-      <p class="text-left question-header">Mary Goverl</p>
-      <p class="text-left question-date">01/21/2019</p>
-      <spacer size="15"></spacer>
-      <p class="text-left question">I would like to take a look at this house</p>
-    </columns>
-    <columns small="1"></columns>
-  </row>
-
-  <spacer size="35"></spacer>
+  <spacer size="30"></spacer>
 
   {{> footer}}
 
