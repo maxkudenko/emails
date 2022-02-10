@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "foundation-emails": "^2.2.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "pug": "^2.0.4"
   },
   "devDependencies": {
